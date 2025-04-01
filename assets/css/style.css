@@ -42,8 +42,42 @@ h6 {
   isolation: isolate;
 }
 
-#card{
-    display: flex;
-    flex-direction: column;
-    margin: auto 2rem;
+/* Define font variables */
+:root {
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Fraunces", serif;
+
+  --green-500: hsl(158, 36%, 37%);
+  --green-700: hsl(158, 42%, 18%);
+  --black: hsl(212, 21%, 14%);
+  --grey: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  margin: auto 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  overflow: clip;
+  width: 350px;
+}
+
+#image {
+  width: 350px;
+}
+
+#card-content {
+  margin: 32px;
 }
