@@ -122,6 +122,15 @@ body {
   margin: 32px;
 }
 
+#title {
+    margin: 1.5rem 0;
+}
+
+#pricing {
+    flex-direction: row;
+    margin: 1.5rem 0;
+}
+
 #price {
     font-size: medium;
 }
