@@ -162,6 +162,10 @@ body {
     border-radius: .5rem;
 }
 
+#add-to-cart:hover {
+    background-color: var(--green-700);
+}
+
 #cart-icon{
     font-size: 18px;
 }
