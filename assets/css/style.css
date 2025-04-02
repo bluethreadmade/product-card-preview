@@ -122,20 +122,50 @@ body {
   margin: 32px;
 }
 
+#category {
+    color: var(--grey)
+}
+
 #title {
     margin: 1.5rem 0;
+    color: var(--black);
 }
 
 #pricing {
+    display: flex;
     flex-direction: row;
     margin: 1.5rem 0;
+    align-items: center;
+    gap: 1rem
 }
 
 #price {
-    font-size: medium;
+    color: var(--green-500)
 }
 
 #sales-price {
-    font-size: small;
     text-decoration: line-through;
+    color: var(--grey);
+}
+
+#add-to-cart {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    background-color: var(--green-500);
+    border: none;
+    color: var(--white);
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
+
+#cart-icon{
+    font-size: 18px;
+}
+
+footer{
+    margin-bottom: 3rem;
 }
