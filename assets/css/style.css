@@ -123,9 +123,7 @@ body {
   }
 
 #image {
-  height: auto;
-  width: auto;
-  max-width: none;
+  height: 100%;
 }
 
 #card-content {
