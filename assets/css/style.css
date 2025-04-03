@@ -114,8 +114,18 @@ body {
   width: 350px;
 }
 
+@media (min-width: 768px) {
+    #card {
+        flex-direction: row;
+        width: 600px;
+        height:456px
+    }
+  }
+
 #image {
-  width: 350px;
+  height: auto;
+  width: auto;
+  max-width: none;
 }
 
 #card-content {

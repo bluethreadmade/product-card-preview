@@ -28,10 +28,13 @@
   </style>
 </head>
 <body>
-<article id="card">
-  <img id="image" src="./assets/images/image-product-mobile.jpg"/>
-  <!-- <img src="./assets/images/image-product-desktop.jpg"/> -->
-    <div id="card-content">
+<article id="card"> 
+  <picture>
+    <source  id="image" media="(min-width: 768px)" srcset="./assets/images/image-product-desktop.jpg">
+    <img  id="image" src="./assets/images/image-product-mobile.jpg" alt="Product Image">
+  </picture>
+
+  <div id="card-content">
     <header class="text-preset4" id="category">PERFUME</header>
 
     <h1 class="text-preset1" id="title">Gabrielle Essence Eau De Parfum</h1>
