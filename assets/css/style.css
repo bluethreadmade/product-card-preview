@@ -55,7 +55,6 @@ h6 {
   --white: hsl(0, 0%, 100%);
 }
 
-/* Define Text Presets as CSS classes */
 .text-preset1 {
     font-family: 'Fraunces', serif;
     font-weight: bold;
@@ -101,45 +100,48 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
-#card {
-  display: flex;
-  flex-direction: column;
-  margin: auto 2rem;
+.card {
+  display: grid;
+  margin: auto 1rem;
   border-radius: 0.5rem;
   background-color: var(--white);
   overflow: clip;
-  width: 350px;
+  max-width: 37rem;
 }
 
-@media (min-width: 768px) {
-    #card {
-        flex-direction: row;
-        width: 600px;
-        height:456px
+@media (min-width: 48rem) {
+    .card {
+        grid-template-columns: repeat(2, 1fr);
     }
   }
 
-#image {
-  height: 100%;
+.image {
+  object-fit: cover;
 }
 
-#card-content {
-  margin: 32px;
+@media (min-width: 768px) {
+    .image {
+        height: 100%;
+        object-fit: cover;
+    }
+  }
+
+.card-content {
+  margin: 1.5rem;
 }
 
-#category {
+.category {
     color: var(--grey)
 }
 
-#title {
+.title {
     margin: 1.5rem 0;
     color: var(--black);
 }
 
-#pricing {
+.pricing {
     display: flex;
     flex-direction: row;
     margin: 1.5rem 0;
@@ -147,16 +149,16 @@ body {
     gap: 1rem
 }
 
-#price {
+.price {
     color: var(--green-500)
 }
 
-#sales-price {
+.sales-price {
     text-decoration: line-through;
     color: var(--grey);
 }
 
-#add-to-cart {
+.add-to-cart {
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -168,16 +170,17 @@ body {
     width: 100%;
     padding: 1rem 2rem;
     border-radius: .5rem;
+
 }
 
-#add-to-cart:hover {
+.add-to-cart:hover {
     background-color: var(--green-700);
 }
 
-#cart-icon{
+.cart-icon{
     font-size: 18px;
 }
 
 footer{
-    margin-bottom: 3rem;
+    margin: 3rem;
 }
